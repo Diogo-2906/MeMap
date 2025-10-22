@@ -17,37 +17,37 @@
         <nav class="navbar bg-body-tertiary">
             <div class="container-fluid">
                 <div class="w-100 d-flex align-items-center">
-                    <a class="navbar-brand ms-2 d-flex " href="#">
+                    <a class="navbar-brand ms-3 d-flex " href="#">
                         <img src="img/memap.png" alt="IconMeMap" width="60" height="60">
                         <h1 class="text-white d-inline-block align-text-top fw-bold ms-2">MeMap</h1>
                     </a>
-                    <form class="d-flex mx-auto ms-lg-5" role="search" style="width: 900px;">
+                    <form class="d-flex mx-auto ms-lg-5" role="search" style="width: 1000px;">
                         <input class="form-control" type="search" placeholder="Pesquise no MeMap" aria-label="Search" />
                         <button class="btn bi-search btn-outline-secondary border-white ms-0" type="submit">
                             
                         </button>
                     </form>
+					<button class="navbar-toggler ms-auto d-flex " type="button"
+							data-bs-toggle="offcanvas"
+							data-bs-target="#offcanvasNavbar"
+							aria-controls="offcanvasNavbar">
+						<span class="bi bi-list fs-1 text-white" aria-hidden="true"></span>
+					</button>
+					<div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+						<div class="offcanvas-header">
+							<h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">Menu</h5>
+							<button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+						</div>
+						<div class="offcanvas-body">
+							<ul class="navbar-nav">
+								<li class="nav-item"><a class="nav-link text-white" href="#">Início</a></li>
+								<li class="nav-item"><a class="nav-link text-white" href="#">Mapa</a></li>
+								<li class="nav-item"><a class="nav-link text-white" href="#">Perfil</a></li>
+							</ul>
+						</div>
                 </div>
             </div>
-            <button class="navbar-toggler ms-auto d-flex " type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-            style=" margin-top: 0; ">
-                <span class="bi bi-list fs-3" aria-hidden="true"></span>
-            </button>
-            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a class="nav-link" href="#">Início</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Mapa</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Perfil</a></li>
-                    </ul>
-                </div>
+            
             </div>
         </nav>
     </header>
