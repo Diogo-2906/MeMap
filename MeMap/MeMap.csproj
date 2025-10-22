@@ -10,6 +10,7 @@
   <ItemGroup>
     <Content Remove="Views\Home\Privacy.cshtml" />
     <Content Remove="wwwroot\css\MeMap.css" />
+    <Content Remove="wwwroot\img\MeMapPlus.cs" />
   </ItemGroup>
 
   <ItemGroup>
